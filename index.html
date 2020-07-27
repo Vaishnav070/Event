@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Form validation using jQuery</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script type="text/javascript" src="jquery-1.11.1.js"></script>
+<script type="text/javascript" src="main.js"></script>
+</head>
+<body>
+	<h1><center>Form validation using jQuery</center></h1>
+<form action="" method="post" onsubmit="return validate();" id="form_submission_ajax">
+	<table class="form-table">
+		<tr>
+			<td><label>Firstname:</label></td>
+			<td><input type="text" name="f_name" id="f_name">
+			</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td id="f_name_error" class="error"></td>
+		</tr>
+		<tr>
+			<td><label>Lastname:</label></td>
+			<td><input type="text" name="l_name" id="l_name"></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td id="l_name_error" class="error"></td>
+		</tr>
+		<tr>
+			<td><label>Email:</label></td>
+			<td><input type="email" name="email" id="email"></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td id="email_error" class="error"></td>
+		</tr>
+		<tr>
+			<td><label>Street Address:</label></td>
+			<td><input type="address" name="address" id="address"></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td id="address_error" class="error"></td>
+		</tr>
+		<tr>
+			<td><label>City:</label></td>
+			<td><input type="city" name="city" id="city"></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td id="city_error" class="error"></td>
+		</tr>
+		<tr>
+			<td><label>Gender:</label></td>
+			<td><input type="radio" name="gender" id="gender" value="male">Male
+				<input type="radio" name="gender" id="gender" value="female">Female
+			</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td id="gender_error"></td>
+		</tr>
+		
+	
+		<tr>
+			<td><label>State:</label></td>
+			<td>
+				<select name="state" id="state">
+					<option value="">Select State</option>
+					<option value="MH">Maharastra</option>
+					<option value="GI">Gujrat</option>
+					<option value="RJ">Rajastan</option>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td id="state_error" class="error"></td>
+		</tr>
+		<tr>
+			<td><label>Phone No:</label></td>
+			<td><input type="telephone" name="phone" id="phone"></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td id="phone_error" class="error"></td>
+		</tr>
+<tr>
+			<td><label>Shirt Size:</label></td>
+			<td><input type="radio" name="XS" id="xs" value="xs">XS
+				<input type="radio" name="size" id="size" value="s">S
+<input type="radio" name="size" id="size" value="m">M
+<input type="radio" name="size" id="size" value="l">L
+<input type="radio" name="size" id="size" value="xl">XL
+			</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><input type="submit" name="submit" value="Submit"></td>
+		</tr>
+	</form>
+</body>
+</html>
